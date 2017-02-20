@@ -1,0 +1,14 @@
+
+applications:
+- name: SpringBootDemoServer
+  buildpack: java_buildpack
+  path: build/libs/BootServer-0.0.1-SNAPSHOT.jar
+  memory: 512M
+  instances: 1
+  host: SpringBootDemoServer
+  env:
+    JBP_CONFIG_OPENJDK: 'verion: 1.8.+'
+  random-route: true
+  
+  
+  
